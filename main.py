@@ -11,6 +11,13 @@ class Item(BaseModel):
     tax: Optional[float] = None
 
 
+class User(BaseModel):
+    name: str
+    surname: str
+    age: int
+    bio: Optional[str] = None
+
+
 app = FastAPI()
 
 
@@ -26,3 +33,4 @@ async def create_item(item: Item):
 @app.put("/items/{item_id}")
 async def create_item(item_id: int, item: Item):
     return {"item_id": item_id, **item.dict()}
+
