@@ -1,8 +1,8 @@
 ENV:
 
 ```
-py -m venv cominer
-cominer\Scripts\activate
+py -m venv fastapi
+fastapi\Scripts\activate
 pip install -r requirements.txt
 ```
 
